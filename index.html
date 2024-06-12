@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div
+      class="page-wrapper flex min-h-screen flex-col justify-between bg-slate-800 capitalize"
+    >
+      <nav
+        class="flex h-16 items-center justify-between bg-slate-900 p-4 text-white"
+      >
+        <div class="logo">
+          <img class="h-10" src="assets/logo.svg" />
+        </div>
+        <div class="hidden space-x-3 md:block">
+          <a href="#" class="hover:text-indigo-600">Home</a>
+          <a href="#" class="hover:text-indigo-600">Careers</a>
+          <a href="#" class="hover:text-indigo-600">About Us</a>
+          <a href="#" class="hover:text-indigo-600">Community</a>
+        </div>
+        <div
+          id="mobile-menu"
+          class="ease-in-ou fixed left-0 top-0 z-50 flex h-screen w-full translate-x-full transform flex-col items-center justify-center gap-4 bg-slate-900 p-4 transition-transform duration-300 md:hidden"
+        >
+          <a
+            href="#"
+            class="w-full rounded-lg border-x-2 border-slate-400 bg-slate-800 py-3 text-center text-lg text-slate-200 shadow-2xl hover:bg-indigo-600"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="w-full rounded-lg border-x-2 border-slate-400 bg-slate-800 py-3 text-center text-lg text-slate-200 shadow-2xl hover:bg-indigo-600"
+            >Careers</a
+          >
+          <a
+            href="#"
+            class="w-full rounded-lg border-x-2 border-slate-400 bg-slate-800 py-3 text-center text-lg text-slate-200 shadow-2xl hover:bg-indigo-600"
+            >About Us</a
+          >
+          <a
+            href="#"
+            class="w-full rounded-lg border-x-2 border-slate-400 bg-slate-800 py-3 text-center text-lg text-slate-200 shadow-2xl hover:bg-indigo-600"
+            >Community</a
+          >
+          <a
+            href="#"
+            class="w-full rounded-lg border-x-2 border-slate-400 bg-slate-800 py-3 text-center text-lg text-slate-200 shadow-2xl hover:bg-indigo-600"
+            >Login</a
+          >
+          <a
+            href="#"
+            id="close-mobile-menu"
+            class="absolute right-4 top-4 h-8 w-8 rounded-lg bg-red-600 p-1 text-slate-200 shadow-lg"
+          >
+            <img class="w-full" src="assets/close.svg" />
+          </a>
+        </div>
+        <div class="login hidden md:block">
+          <a
+            href="#"
+            class="rounded-lg bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-500"
+          >
+            Login
+          </a>
+        </div>
+        <div class="md:hidden">
+          <a href="#" class="rounded-lg" id="open-mobile-menu">
+            <img class="h-10 w-10 p-1" src="assets/menu.svg" />
+          </a>
+        </div>
+      </nav>
+
+      <div class="page-content">
+        <form class="search mt-4 flex justify-center bg-slate-800 px-4">
+          <div
+            class="flex w-full flex-wrap gap-2 sm:w-3/4 sm:flex-nowrap md:w-2/3 lg:w-1/3"
+          >
+            <input
+              class="w-full rounded-lg bg-slate-300 p-2 text-slate-800 sm:flex-1"
+              type="text"
+              placeholder="Enter you query here .."
+            />
+            <button
+              class="w-full rounded-lg bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-500 sm:max-w-fit"
+            >
+              GO!
+            </button>
+          </div>
+        </form>
+        <div
+          class="boxes-container flex flex-col p-4 text-white sm:w-full md:flex-row md:flex-wrap"
+        >
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-orange-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 1</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/2"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-blue-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 2</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-pink-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 3</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-green-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 4</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-neutral-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 5</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-red-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 6</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-purple-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 7</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-yellow-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 8</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-fuchsia-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 9</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-lime-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 10</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-1/4"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-slate-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 11</h4>
+            </div>
+          </div>
+          <div
+            class="box flex h-24 items-center justify-center p-1 sm:w-full md:w-1/2 lg:w-full"
+          >
+            <div
+              class="flex h-full flex-1 items-center justify-center rounded-lg bg-rose-500 p-4 text-center font-bold"
+            >
+              <h4>BOX 12</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        class="flex h-16 items-center justify-between border-t-2 border-slate-400 bg-slate-900 p-4 text-white"
+      >
+        <div class="lowercase text-slate-400">v1.0.0</div>
+        <div class="text-slate-400">Copyright © 2024</div>
+        <div class="relative text-slate-400">
+          EL—OUARDY
+          <span
+            class="absolute top-0 size-2 animate-ping rounded-full bg-orange-500"
+          ></span>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
